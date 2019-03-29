@@ -10,6 +10,7 @@
     <ul>
       <li> The default env variable for deployment type: <b>{{ nodeEnv }}</b> </li>
       <li> The variable will always show in any mode. It in the .env file: <b>{{ defaultEnv }}</b> </li>
+      <li> The variable will not show in any mode because it does not have VUE_APP prefix. It is in the .env file:<b> {{ envWithoutVueApp }}</b> </li>
       <li> The variable will only show in development mode. It in the .env.development file:<b> {{ devEnv }}</b> </li>
       <li> The variable will only show in production mode. It in the .env.production file:<b> {{ prodEnv }}</b> </li>
     </ul>
@@ -34,6 +35,9 @@ export default {
     },
     prodEnv: function () {
       return process.env.VUE_APP_PROD_TITLE
+    },
+    envWithoutVueApp: function () {
+      return process.env.NORM_PROD_TITLE
     }
   },
   mounted: function () {

@@ -1,6 +1,6 @@
 # vuejs-env
 
-To show quickly in an example of the vue cli 3 variables work. When running these commands the results will appear on the startup page.
+To show quickly in an example of how the vue cli 3 variables work. When running these commands the results will appear on the startup page.
 
 ### File structure
 ```

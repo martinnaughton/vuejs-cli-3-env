@@ -2,7 +2,7 @@
 
 When running these commands the results will appear on the startup page.
 
-# File structure
+### File structure
 ```
   .env                # loaded in all cases
   .env.local          # loaded in all cases, ignored by git
